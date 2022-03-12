@@ -19,6 +19,18 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+        <script>
+            import Echo from "laravel-echo"
+            window.Pusher = require('pusher-js');
+            window.Echo = new Echo({
+                broadcaster: 'pusher',
+                key: 'local',
+                wsHost: window.location.hostname,
+                wsPort: 6001,
+                forceTLS: false,
+                disableStats: true,
+            });
+        </script>
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
