@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/test', function () {
     broadcast(new Hello());
 });
+Route::get('/react', function () {
+    return view('app');
+});
