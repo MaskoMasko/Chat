@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function Example({ text }) {
+function Example({ text }:any) {
     return (
         <div className="container">
             <div className="row justify-content-center">
